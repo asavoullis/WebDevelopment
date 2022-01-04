@@ -1,2 +1,2 @@
 # WebDevelopment
-Refreshing my HTML CSS JS skills + expanding my knowledge
+Refreshing and expanding my HTML CSS JS skills and knowledge.
