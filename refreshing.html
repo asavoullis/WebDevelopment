@@ -62,8 +62,8 @@
         <p>This is a <br> paragraph with a line break.</p>
 
         <!-- change the color of the background of the page -->
-        <body style="background-color:powderblue;"></body>
-
+        <body style="background-color:white;"></body>
+        
         <!-- adds a horizontal line  --->
         <hr/>  
         <!-- inserts an empty line twice -->
@@ -234,9 +234,98 @@
         <section>
             <dl>
                 <dt>Apples </dt>
-                <dd>The red ones </dd>
+                <dd>- The red ones </dd>
+                <dt>Oranges </dt>
+                <dd>- The orange ones :p </dd>
             </dl>
         </section>
+
+
+        <!-- creating tables-->
+
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+        </style>
+
+        <section>
+            <table>
+                <!-- split table into sections  thead and tbody -->
+                <thead>
+                    <!-- title of table -->
+                    <caption><h2>List of numbers</h2></caption>
+                    <!-- tr = tablr row     th = table header     td = table data -->
+                    <tr>
+                        <th>one</th>
+                        <th>two</th>
+                        <th>three</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>one-one</td>
+                        <td>ono-two</td>
+                        <td>one-three</td>
+                    </tr>
+                    <tr>
+                        <td>two-one</td>
+                        <td>two-two</td>
+                        <td>two-three</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">takes 2 col </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br></br>
+            <a href="https://www.w3schools.com/html/html_tables.asp">Tables and their Styling </a>
+        </section>
+        <br></br>
+
+        <!-- Containers 2 types Block and Inline Elements 
+        Block takes the entire area - rectangle or square 
+        - can't have 2 block elements next to each other 
+        - they take the entire width of the page
+        Inline takes as much space as needed -->
+
+        <Section>
+            <!-- for examples paragraphs don't go next to each other they are block elements-->
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+
+            <h1>This is a paragraph.</h2>
+            <h2>This is another paragraph.</h2>
+
+        <!-- Spans and Divs Elements
+            Divs are Block Containers
+            Spans are Inline containers
+            
+            Use them to make when styling with CSS - its easier -->
+
+        <span>span1</span>
+        <span>span2</span>
+
+        <div>div1</div>
+        <div>div2</div>
+
+
+        </Section>
 
 
     </body>
