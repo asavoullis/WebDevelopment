@@ -19,8 +19,12 @@
         <meta name="description" content="This is Alkis' Website">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    
+        <!-- set icon on tab -->
+        <link rel="icon" type="image/x-icon" href="github.png">
+
         <title>Alkis' Website</title>
+        
     </head>
 
 <!-- anything that you want to add to your web page you want to put within 
@@ -30,7 +34,7 @@
 
         <p title="Title">Title.</p>
 
-        <!-- notice the change in styles-->
+        <!-- notice the change in styles  h1 to h6 -->
         <h1>This is heading 1 h1</h1>
         <h2>This is heading 2 h2</h2>
         <h3>This is heading 3 h3</h3>
@@ -44,14 +48,18 @@
         <!-- not the same case as headings styles with paragraphs -->
         <p>This is a paragraph.</p>
         <p>This is another paragraph.</p>
-        <p>This is another paragraph.</p>
+
+        <!-- HTML has a tag for quotation marks-->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!-- The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+        Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+        Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+        -->
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
         <!-- <br> changes line -->
         <p>This is a <br> paragraph with a line break.</p>
-
-        <!-- HTML images are defined with the img tag -->
-        <h2>HTML Images like the one below</h2>
-        <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
 
         <!-- change the color of the background of the page -->
         <body style="background-color:powderblue;"></body>
@@ -82,11 +90,20 @@
         <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
         <p>H<sub>2</sub>0</p>
 
+        <!-- reverse the line -->
+        <bdo dir="rtl">This line will be written from right to left</bdo>
+
+        <!-- citing in HTML -->
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
         <!-- INS = UNDERLINE  DEL = LINE INSIDE -->
         <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>  
 
         <!-- making the text bigger -->
         <p><big> This text is bigger than previous </big></p>
+
+        <!-- border colouring -->
+        <h1 style="border:2px solid Violet;">Hello World</h1>
 
         
         <!-- HTML has tags that we can use to split the webpage page in sections - structure -->
@@ -116,6 +133,16 @@
                         </aside>
 
                     </h2>
+
+                    <h2>
+                        <address>
+                            Written by John Doee.<br>
+                            Visit us at:<br>
+                            Example.com<br>
+                            Box 1234, Disneyland<br>
+                            USA
+                        </address>
+                    </h2>
                 </section>
             </article>
 
@@ -126,12 +153,13 @@
 
         </footer>
 
+
+        <section>
         <!-- a Link is used to link your website to other websites or other webpages 
         on the internet - can also lead to files / images / pdfs etc -->
         
         <!-- adding a link  <a href=""> -->
         <a href="https://www.w3schools.com">This is a link that goes to w3schools</a>
-        <br/><br/>
 
         <!-- open in a new tab -->
         <a href="https://www.google.com" target="_blank"><h1>Google's <b>homepage</b></h1></a>
@@ -140,6 +168,43 @@
         we can just write the name of the html file! -->
         
         <a href="structure.html">Example Structure of an HTML page</a>
+
+        <!--page not in the same dir -->
+        <a href="dir1/page1.html">Page1 in other dir</a>
+        </section>
+
+        <section>
+        <!-- same principle for images and files eg pdf or word -->
+        <a href="github.png"> Github logo</a>
+
+        <!-- in HTML images are defined with the img tag 
+        the alt option is there in case the image is not found -->
+        <h2>HTML Images like the one below</h2>
+        <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="w3schools logo image" >
+        
+        <!-- we can even control the size of the images note that :
+        if you set only height or width, HTML will automatically adjust the aspect ratio -->
+        <h2>HTML Images like the one below</h2>
+        <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="W3Schools.com" width="200" height="142">
+        </section>
+
+        <p>          
+        <!-- adding a video 
+        poster = thumbnail, controls to show buttons, width to set size and height will be auto adjusted
+        autoplay if we want to play it instantly -->
+        <video src="tutorial.mp4" poster="thump.jpg" autoplay loop controls width="300" ></video>
+        <br><br/>
+
+        <!-- youtube videos (or on url)-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>    
+        
+
+        <!-- creating lists in HTML-->
+        <section>
+
+        </section>
 
 
     </body>
