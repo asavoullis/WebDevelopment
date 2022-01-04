@@ -4,7 +4,7 @@
  <!-- This is a comment section
 
     Hypertext Markup Language
-    Declarative langauge - NOT computational as python
+    Declarative langauge - NOT computational like python
     
     No style (That's why we need CSS)
     Static nature, no animations (That's why we need JavaScript) -->
@@ -15,10 +15,12 @@
     It describes information about this document to the web browser 
     The settings for this document - meta data about the file -->
         <meta charset="UTF-8">
-        <!-- used by search engines -->
+        <!-- used by search engines ¬ 150 words -->
         <meta name="description" content="This is Alkis' Website">
+        <meta name="author" content="Alkiviades Savoullis">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Alkis, Alkiviades, Savoullis, Portfolio, CV, Website, Charilaos, Developer, Designer, Consultant, Software, Engineer, Products">
     
         <!-- set icon on tab -->
         <link rel="icon" type="image/x-icon" href="github.png">
@@ -31,13 +33,15 @@
     the body tag so it can be displayed -->
     <body>
 
-
         <p title="Title">Title.</p>
 
         <!-- notice the change in styles  h1 to h6 -->
         <h1>This is heading 1 h1</h1>
         <h2>This is heading 2 h2</h2>
         <h3>This is heading 3 h3</h3>
+
+        <!-- adds a few spaces -->
+        <h3>This is heading &nbsp &nbsp &nbsp &nbsp &nbsp 3 h3</h3>
 
         <!-- inserts an empty line -->
         <br/>
@@ -111,7 +115,7 @@
 
         <!-- top of the page-->
         <header>
-            <!-- nav tag is used to store navigational elements eg links or lists to other pages -->
+            <!-- nav tag is used to store navigational elements eg links or lissts to other pages -->
             <nav>
 
             </nav>
@@ -164,13 +168,15 @@
         <!-- open in a new tab -->
         <a href="https://www.google.com" target="_blank"><h1>Google's <b>homepage</b></h1></a>
 
-        <!-- lets say we want to access another webpage of our website which is in the same directory 
-        we can just write the name of the html file! -->
-        
-        <a href="structure.html">Example Structure of an HTML page</a>
-
-        <!--page not in the same dir -->
-        <a href="dir1/page1.html">Page1 in other dir</a>
+            <!-- lets say we want to access another webpage of our website which is in the same directory 
+            we can just write the name of the html file! -->
+            <div>
+            <a href="structure.html">Example Structure of an HTML page</a>
+            <br></br>
+            <!--page not in the same dir -->
+            <a href="dir1/page1.html">Page1 in other dir</a>
+            <br></br>
+            </div>
         </section>
 
         <section>
@@ -205,7 +211,8 @@
 
         <!-- unordered list - circle markers unordered -->
         <section>
-            <ul>
+        <!-- oprtional to change the style of the circle -->
+            <ul style="list-style-type: circle;">
                 <li><a href='https://www.google.com/search?channel=trow5&client=firefox-b-d&q=apples'>Apples</a></li>
                 <li>Oranges</li>
                 <li>Bananas</li>
@@ -218,7 +225,7 @@
         or type="i" for roman numbers       OR type="a" for lower letter
         -->
         <section>
-            <ol>
+            <ol type="1" start="100">
             <li>Apples</li>
             <li>Oranges</li>
             <ol type="i">
@@ -243,6 +250,7 @@
 
         <!-- creating tables-->
 
+        <!-- CSS -->
         <style>
             table {
               font-family: arial, sans-serif;
@@ -320,12 +328,84 @@
 
         <span>span1</span>
         <span>span2</span>
+        <br></br>
 
         <div>div1</div>
         <div>div2</div>
-
+        <br></br>
 
         </Section>
+
+        <!-- Input tags and Forms  
+        Users can put information eg text boxes to put information and interact 
+        With HTML we don't make them function, we need JavaScript for this 
+        https://www.w3schools.com/tags/tag_input.asp
+        https://www.w3schools.com/html/html_blocks.asp
+        https://www.w3schools.com/TagS/att_input_type.asp
+        -->
+        
+        <section>
+            <div>
+                <input type="text" value="Enter your email"/>
+            </div>
+            <br></br>
+            <div>
+                <input type="password"/>
+            </div>
+            <br></br>
+            <div>
+                <input type="button" value="Click here!"/>
+            </div>
+            <br></br>
+
+            <div>
+            <!-- you can give Textarea specific properies and dimensions -->
+                <textarea name="Textarea1" id="0001" cols="30" rows="10">      Enter a paragraph
+                </textarea>
+            </div>
+            <br></br>
+            <div>
+                <input type="date">
+            </div>
+            <br></br>
+            <div>
+                <input type="email">
+            </div>
+            <br></br>
+            <div>
+                <input type="range">
+            </div>
+            <br></br>
+            <div>
+                <input type="file">
+            </div>
+            <br></br>
+            <div>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+            <br></br>
+            <div>
+            <!-- if they have the same name you can only check one at a time -->
+                <input name="btn" type="radio">
+                <input name="btn" type="radio">
+            </div>
+            <br></br>
+            <div>
+            <!-- form acts as a wrapper for these different input tags -->
+                <form>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+        <br></br>
+
+        <!-- IFrames - an HTML element that's actually able to display another website inside your website (embedd)
+        some websites don't allow this for security - safety reasons -->
+        <div>
+            <iframe src="https://www.amazon.com/" width="1000">Error 404</iframe>
+        </div>
 
 
     </body>
