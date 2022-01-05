@@ -10,14 +10,92 @@ Element     Property    Value   ;
 
 /* Declaring them here and then we need to link them */
 h5{
-    background-color: #111111;
+    background-color: #8a7373;
     color: #00aa00;
     font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: normal;
+     
 }
 span{
-    background-color: #111111;
+    background-color: #aca5a5;
     color: #00ff00;
+    /* If the browser doesn't support the first style it goes to te next */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline wavy blue;    
+    
+}
+h3{
+    font-family: 'Aldrich','Ink Free', sans-serif;
+    font-size: 28px;
 }
 
+/* adding a Border to the body */
+body{
+    background-color: #9999;
+    /* border-styles: dotted, double, ridge, groove, inset, outset */
+    border-style: solid;
+    border-style: dashed; 
+    border-width: 3px; /* 3px 5px 3px 5px  -> Top Right Bottom Left */
+    border-color: #00ff00;
+    /* slightly smooth out the edges of the border */
+    border-radius: 5px;
+    /*  only 1 side of the border */
+    border-top-style: solid;
+    /* dimensions of only 1 side of the border */
+    border-left-width: 10px;
+    /* colour individual side of the border */
+    border-bottom-color: red;
+    padding: 5px;
+}
+/* Background by targeting the HTML or Body tag coloring*/
+html{
+    /*background: linear-gradient(aliceblue, lightblue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    Using an image now:
+    */
+    background-image: url(example.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+h4{
+    /* background: linear-gradient(red, orange, green, blue, indigo, violet) */
+    border: 1px;
+    width: 300px;
+    /* padding is the distance between an item within an element and where a border would be 
+    margins are the distance from an HTML element to other HTML elements for the edge of the browser window */
+    padding: 25px;
+}
+/* id margin and shadows */
+#p1{
+    box-shadow: 10px 10px 5px #666666;
+    margin-top: 25px;
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+    margin: 25px 75px 25px 75px;
+}
+#p2{
+    text-shadow: 0px 0px 5px yellow, 0px -5px 5px red;
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    font-size: 20px;
+}
+#p4{
+    margin-right: auto;
+}
+/* vertically center the paragraph*/
+#p5{
+    margin: auto;
+}
