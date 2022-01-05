@@ -1,0 +1,23 @@
+/* 3 ways to include CSS for a web page 
+Inline in HTML at the tags 
+Internal in HTML header (for one webpage)
+External linking our CSS file to our HTML files
+*/
+
+/* Rules: Identify the HTML element that you want to customize with CSS - Internal and External
+Element     Property    Value   ;
+*/
+
+/* Declaring them here and then we need to link them */
+h5{
+    background-color: #111111;
+    color: #00aa00;
+    font-size: medium;
+}
+span{
+    background-color: #111111;
+    color: #00ff00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
