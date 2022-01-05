@@ -5,19 +5,39 @@
     URL = Uniform Resource Location - a way to locate a resource on the internet
     Browser/PC -> Clinet - Server
     HTTP = Hypertext Transfer Protocol (Secure + Encryption)   
-    https://youtu.be/cyuzt1Dp8X8 BroCode-->
+    https://youtu.be/cyuzt1Dp8X8    BroCode-->
 
+    <!-- 3 ways to include CSS for a web page 
+    Inline in HTML at the tags 
+    Internal in HTML header (for one webpage)
+    External linking our CSS file to our HTML files -->
+
+    <!-- Meta Data = Data about Data -->
     <head>
         <meta charset="UTF-8">
         
         <meta name="description" content="This is Alkis' Website">
-        <meta name="author" content="Alkiviades Savoullis">
+        <meta name="author" content="Official Website of Alkiviades Savoullis  CV Portfolio Hire Services Products Developer">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Alkis, Alkiviades, Savoullis, Portfolio, CV, Website, Charilaos, Developer, Designer, Consultant, Software, Engineer, Products">
         <link rel="icon" type="image/x-icon" href="alkis.png">
 
         <title>Alkis' Website</title>
+
+        <!-- Internal CSS -->
+        <style>
+            p{
+                background-color: #111111;
+                color: #00aa00;
+            }
+
+            #paragraph1{
+                background-color: aquamarine;
+                color: #00198a;
+            }
+
+        </style>
 
     </head>
 
@@ -40,6 +60,10 @@
             <nav>
 
             </nav>
+            <br><br>
+
+            <p> this is a paragraph without an id </p>
+            <p id="paragraph1"> P with id paragraph1. </p>
         </header>
 
         <!-- main part of the page-->
@@ -148,49 +172,42 @@
                             <label for="fname">First Name:</label>
                             <input type="text" id="fname" name="fname" placeholder="FirstName" required>
                         </div>
-                
                         <br>
                 
                         <div>
                             <label for="lname">Last Name:</label>
                             <input type="text" id="lname" name="lname" placeholder="LastName" required>
                         </div>
-                
                         <br>
                 
                         <div>
                             <label for="pass">Password:</label>
                             <input type="password" id="pass" name="pass" maxlength="12" required>
                         </div>
-                
                         <br>
                 
                         <div>
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" placeholder="test@example.com">
                         </div>
-                
                         <br>
                 
                         <div>
                             <label for="phone">Phone #:</label>
                             <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
                         </div>
-                
                         <br>
                 
                         <div>
                             <label for="bdate">Birthdate:</label>
                             <input type="date" id="bdate" name="bdate">
                         </div>
-                        
                         <br>
-                
+            
                         <div>
                             <label for="quantity">Quantity:</label>
                             <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
                         </div>
-                        
                         <br>
                 
                         <div>
@@ -207,9 +224,7 @@
                             
                             <label for="PhD.">PhD.</label>
                             <input type="radio" id="PhD." name="title" value="PhD.">
-
                         </div>
-                        
                         <br>
                 
                         <div>
@@ -220,30 +235,40 @@
                                 <option value="giftcard">Giftcard</option>
                             </select>
                         </div>
-                        
                         <br>
-                
+
+                        <div>
+                            <label for="slider">Rate us:</label>
+                            1<input type="range" step="25" value="100">5
+                        </div>
+                        <br>
+
                         <div>
                             <label for="subscribe">Subscribe:</label>
                             <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
                         </div>
-                        
                         <br>
-                
+                        
+                        <div>
+                            <label for="Uploadfile">Upload a File:</label>
+                            <input type="file" id="Uploadfile" name="Uploadfile" accept=".txt">
+                        </div><br>
+
                         <div>
                             <input type="reset">
-                        </div>
-                
-                        <br>
+                        </div><br>
                 
                         <div>
                             <input type="submit">
-                        </div>
+                        </div><br>
                 
                     </form>
                 </section>
 
-
+                <!-- Inline CSS affects the WHOLE TAG -->
+                <section style="background-color: #5283a7; color: rgb(255, 255, 255);">
+                    <h1>CSS Demo</h1>
+                </section>
 
            
             </article>
