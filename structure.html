@@ -1,6 +1,12 @@
 <!DOCTYPE html>    
 <html lang="en"> 	
 
+    <!-- usefull terms 
+    URL = Uniform Resource Location - a way to locate a resource on the internet
+    Browser/PC -> Clinet - Server
+    HTTP = Hypertext Transfer Protocol (Secure + Encryption)   
+    https://youtu.be/cyuzt1Dp8X8 BroCode-->
+
     <head>
         <meta charset="UTF-8">
         
@@ -16,9 +22,9 @@
     </head>
 
     <!-- Front End Devs use HTML, CSS and JS 
-    Hypertext Markup Language   defines the building blocks of the webpage            - Markup Language
-    Cascading Stylesheet        used for styling web pages and making them look nicer - Styling Language
-    JavaScript                  is used to add functionality to the webpages          - Programming Language 
+    Hypertext Markup Language   defines the building blocks of the webpage (structure) - Markup Language
+    Cascading Stylesheet        used for styling web pages and making them look nicer  - Styling Language
+    JavaScript                  is used to add functionality to the webpages           - Programming Language 
     -->
 
     <!-- anything that you want to add to your web page you want to put within 
@@ -44,23 +50,202 @@
                 <!-- section to break up each article in sections -->
                 <section>
                     <h2> 
-                    
-<!-- setting a link back to the index page -->
+                    <!-- setting a link back to the index page -->
                         <a href="refreshing.html"> Index Page </a>
-
                     <br><br/>
                         <!--page not in the same dir -->
                          <a href="dir1/page1.html">Page1 in other dir</a>
                     
-
-    <!-- this content is on the page and its getting shown to the 
-    users but its not directly related to the core content of the website -->
+                        <!-- this content is on the page and its getting shown to the 
+                        users but its not directly related to the core content of the website -->
                         <aside> 
 
                         </aside>
-
                     </h2>
                 </section>
+                <br><br><br>
+
+                <section>
+                    <table border=2px bgcolor="powerblue" height=150 width=100%>
+                        <!-- split table into sections  thead and tbody -->
+                        <thead>
+                            <!-- title of table -->
+                            <caption><h2>List of numbers</h2></caption>
+                            <!-- tr = tablr row     th = table header     td = table data -->
+                            <tr>
+                                <th>one</th>
+                                <th>two</th>
+                                <th>three</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr bgcolor="grey" aligh=center>
+                                <td>one-one</td>
+                                <td>ono-two</td>
+                                <td>one-three</td>
+                            </tr>
+                            <tr bgcolour="yellow" aligh=left>
+                                <td>two-one</td>
+                                <td>two-two</td>
+                                <td>two-three</td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="2">takes 2 col </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                </section>
+
+                <!-- Audio files -->
+                <section>
+                    <!-- loops = will keep playing again , muted = will start as muted , autoplay = start automatically -->
+                    <audio controls loop muted>
+                        <source src="PeanutButterJellyTime.mp3">
+                        Your browser doesn't support audio
+                    </audio>
+                    <br><br><br><br>
+                </section>
+
+                <!-- Making buttons -->
+                <section>
+                    <button name="simple_button" type="button"> Click Me!
+                    </button>
+                    <br><br>
+
+                    <button disabled>Disabled
+                    </button>
+                    <br><br>
+                    
+                    <button autofocus>autofocus</button>
+                    <br><br>
+
+                    <button onclick="alert('Run!')">
+                        ALERT!
+                    </button>
+                    <br><br>
+
+                    <a href="https://www.google.com" target="_blank">
+                        <button style="font-size: 18px;"> 
+                            Google
+                        </button>
+                    </a>
+                    <br><br>
+
+                    <button style="background-color: #97f7cc; color: #00198a; font-family: monospace;">
+                        CSS style
+                    </button>
+                    <br><br>
+                </section>
+
+                <!-- creating a text box for someone to enter their name-->
+                <section>
+                    <form action="action_page.php" method="POST">
+
+                        <div>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="FirstName" required>
+                        </div>
+                
+                        <br>
+                
+                        <div>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname" placeholder="LastName" required>
+                        </div>
+                
+                        <br>
+                
+                        <div>
+                            <label for="pass">Password:</label>
+                            <input type="password" id="pass" name="pass" maxlength="12" required>
+                        </div>
+                
+                        <br>
+                
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="test@example.com">
+                        </div>
+                
+                        <br>
+                
+                        <div>
+                            <label for="phone">Phone #:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+                        </div>
+                
+                        <br>
+                
+                        <div>
+                            <label for="bdate">Birthdate:</label>
+                            <input type="date" id="bdate" name="bdate">
+                        </div>
+                        
+                        <br>
+                
+                        <div>
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+                        </div>
+                        
+                        <br>
+                
+                        <div>
+                            <label for="title">title:</label>
+                
+                            <label for="Mr.">Mr.</label>
+                            <input type="radio" id="Mr." name="title" value="Mr.">
+                
+                            <label for="Mrs.">Mrs.</label>
+                            <input type="radio" id="Mrs." name="title" value="Mrs.">
+                
+                            <label for="Miss.">Miss.</label>
+                            <input type="radio" id="Miss." name="title" value="Miss.">
+                            
+                            <label for="PhD.">PhD.</label>
+                            <input type="radio" id="PhD." name="title" value="PhD.">
+
+                        </div>
+                        
+                        <br>
+                
+                        <div>
+                            <label for="payment">Payment:</label>
+                            <select id="payment" name="payment">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="giftcard">Giftcard</option>
+                            </select>
+                        </div>
+                        
+                        <br>
+                
+                        <div>
+                            <label for="subscribe">Subscribe:</label>
+                            <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
+                        </div>
+                        
+                        <br>
+                
+                        <div>
+                            <input type="reset">
+                        </div>
+                
+                        <br>
+                
+                        <div>
+                            <input type="submit">
+                        </div>
+                
+                    </form>
+                </section>
+
+
+
+           
             </article>
 
         </main>
